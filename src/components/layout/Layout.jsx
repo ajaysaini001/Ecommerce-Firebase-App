@@ -1,0 +1,19 @@
+import React, { Children } from 'react'
+import Home from '../../pages/home/Home'
+import Navbar from '../navbar/Navbar'
+import Footer from '../footer/Footer'
+
+const Layout = ({children}) => {
+  return (
+    <div>
+        <Navbar/>
+        <div className="content">
+            {children}
+        </div>
+        <Footer/>
+    </div>
+    
+  )
+}
+
+export default Layout
